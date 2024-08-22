@@ -232,7 +232,7 @@ header.sticky ul li a:hover
   padding-right: 30px; 
   padding-top: 100px;
 }
-section .circle::before
+.container .circle::before
 {
   content: '';
   position: absolute;
@@ -246,7 +246,7 @@ section .circle::before
   background: linear-gradient(#f0f,#f00);
   clip-path: circle(32% at 84% 50%);
 }
-section .circle::after
+.container .circle::after
 {
   content: '';
   position: absolute;
@@ -384,7 +384,7 @@ section .circle::after
     left: -1122%;
   }
 }
-.about, .edu, .lan, .proj, .lange, .cer
+.abtco, .edu, .lan, .proj, .lange, .cer
 {
   position: relative;
   display: flex;
@@ -398,6 +398,22 @@ section .circle::after
 .lang
 {
   padding-top: 90px;
+}
+.educ, .pro
+{
+  padding-top: 90px;
+  min-height: 95vh;
+}
+.nom
+{
+  padding-top: 90px;
+  min-height: 85vh
+}
+.cert
+{
+  padding-top: 0;
+  min-height: 95vh;
+  color: #000;
 }
 .about
 {
@@ -417,7 +433,17 @@ section .circle::after
   text-align: center;
   padding: 40px;
 }
-.w45
+.abco
+{
+  font-size: 17px;
+  text-align: left;
+  padding: 20px;
+}
+.eduk, .pre
+{
+  padding: 0 70px 0 0;
+}
+.w45, .wm4
 {
   width: 50%;
   padding-top: 20px;
@@ -428,6 +454,20 @@ section .circle::after
   float: right;
   width: 420px;
   padding: 0 70px 0 0;
+}
+.w45.tcer
+{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  bottom: 0;
+  z-index: 2;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  padding-top: 0;
+  display: flex;
+  width: 100%;
 }
 .skills
 {
@@ -548,10 +588,114 @@ section .circle::after
   position: relative;
   /*text-align: center;*/
 }
+.n1, .n2, .n3, .n4
+{
+  letter-spacing: 1.5px;
+  padding: 0 0 0 80px;
+}
 .lange
 {
   padding-top: 0;
 }
+.sti
+{
+  display: flex;
+  width: 100%;
+}
+.sti img
+{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+#map-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 800px;
+}
+
+#map
+{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+}
+
+path
+{
+  fill: #cfcfcf;
+  stroke: #fff;
+  stroke-width: 2;
+  transition: fill 0.8s, transform 0.8s;
+}
+
+#IN 
+{
+  fill: #fd7400;
+}
+
+#DE 
+{
+  fill: #0080d6;
+}
+
+.United-States 
+{
+  fill: #d62b6c;
+}
+
+#IN:hover{
+  fill: #f17010;
+  transform: translateY(15px);
+  z-index: 10;
+  position: relative;
+}
+
+#DE:hover 
+{
+  fill: #00527f;
+  transform: translateY(15px);
+  z-index: 10;
+}
+
+.United-States:hover 
+{
+  fill: #912046;
+  transform: translateY(15px);
+  z-index: 10;
+}
+
+.map-result 
+{
+  text-align: center;
+  color: #578e00;
+  font-weight: 700;
+  font-size: 20px;
+}
+.IN 
+{
+  color: #f17010;
+  transform: scale(1.2);
+  transition: color 0.8s, transform 0.8s;
+}
+.DE 
+{
+  color: #00527f;
+  transform: scale(1.2);
+  transition: color 0.8s, transform 0.8s;
+}
+.US 
+{
+  color: #912046;
+  transform: scale(1.2);
+  transition: color 0.8s, transform 0.8s;
+}
+
 .sk
 {
   padding: 20px;
@@ -559,7 +703,6 @@ section .circle::after
   color: white;
   opacity: 1;
   transition: opacity 0.6s;
-  margin: -7px 0px 0px 0px;
   text-align: left;
   font-size: 20px;
 }
@@ -631,18 +774,198 @@ section .circle::after
 }
 @media (max-width: 991px)
 {
-    .footer
-    {
-        padding: 20px 50px;
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .footer ul
-    {
-        margin-bottom: 5px;
-    }
-    .text
-    {
-        margin-bottom: 5px;
-    }
+  .footer
+  {
+    padding: 20px 50px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .footer ul
+  {
+    margin-bottom: 5px;
+  }
+  .text
+  {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 991px)
+{
+
+  header
+  {
+    height: 78px;
+    background: #161c6f;
+    padding: 20px 25px;
+    z-index: 5000;
+  }
+  header .logo,
+  header.sticky .logo
+  {
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    color: #fff;
+  }
+  header.sticky
+  {
+    background: #161c6f;
+    padding: 20px 25px;
+    z-index: 5000;
+  }
+  section .circle
+  {
+    display: none;
+  }
+  .menu
+  {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #161c6f;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+  .menu.active
+  {
+    left: 0;
+    padding: 50px 0px;
+    overflow-y: visible;
+    overflow-y: auto;
+    display: block;
+    height: 88.5%;
+    scroll-behavior: smooth;
+  }
+  header.sticky ul li a:hover
+  {
+    background: none;
+    color: red;
+  }
+  header ul li a
+  {
+    color: orangered;
+    padding: 23px 15px; 
+  }
+  .toggle
+  {
+    width: 40px;
+    height: 40px;
+    background: url(./img/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+  .toggle.active
+  {
+    background: url(./img/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+   .container
+  {
+    padding: 0 10px 0 0px;
+  }
+  .contenta, .abtco, .edu, .lange, .cer
+  {
+    padding: 0 10px 0 0px;
+    flex-direction: column;
+  }
+  .contenta
+  {
+    padding-top: 40px;
+  }
+  .ab1, .eduk, .pre
+  {
+    width: auto;
+  }
+  .eduk, .pre, .nom1
+  {
+    padding: 40px;
+    text-align: left;
+  }
+  .abco
+  {
+    padding: 0;
+  }
+  .lan, .lange
+  {
+    flex-direction: column-reverse;
+  }
+  .hal
+  {
+    width: auto;
+  }
+  #map-container
+  {
+    width: auto;
+    height: auto;
+  }
+  .wm4, .nom1
+  {
+    width: auto;
+  }
+  .w45.tcer
+  {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-align-self: none;
+    -ms-flex-item-align: none;
+    align-self: none;
+    padding-top: 0;
+    width: 100%;
+  }
+  .sk
+  {
+    margin: 50px 0 0 0;
+  }
+  .w50
+  {
+    margin-bottom: 20px;
+  }
+  .w50 p
+  {
+    margin: 15px 0;
+  }
+  .w50 img, .slider .figure, .about .w45, .edu .w45, .w45 img, .proj .w46, .w46 img
+  {
+    display: none;
+  }
+  .sti img
+  {
+    display: block;
+    padding: 0;
+  }
+  .lang, .educ, .nom, .cert
+  {
+    padding: 50px 0 0 0;
+  }
+  .ab1
+  {
+    padding-top: 0; 
+  }
+  .contentBx
+  {
+    padding-top: 60px;
+  }
+  .mod img
+  {
+    display: inline-block;
+    justify-content: center;
+  }
+  .container .circle::before, .container .circle::after, .slider
+  {
+    display: none;
+  }
 }
