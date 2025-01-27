@@ -264,15 +264,15 @@ header.sticky ul li a:hover
 {
   min-width: 50%;
 }
-.w50 img
-{
+/* .w50 img */
+/* { */
   /*max-width: 100%;*/
   /*width: 450px;*/
   /*height: 530px;*/
   /*float: right;*/
   /*margin-right: 20%;*/
   /*z-index: 1000;*/
-}
+/* } */
 .slider
 {
   overflow: hidden;
@@ -541,15 +541,15 @@ header.sticky ul li a:hover
   background: linear-gradient(90deg,#0f3959,#2abbff);
 }*/
 
-.w2
-{
+/* .w2 */
+/* { */
   /*background: linear-gradient(90deg,#0f3959,#2abbff);*/
   /*background: linear-gradient(270deg,#FFC107,#E91E63);*/
   /*background: linear-gradient(270deg,#E91E63,#0f3959);*/
   /*background: linear-gradient(270deg,#22ffde,#2196F3);*/
   /*background: linear-gradient(270deg,#1fe6ff,#673AB7);*/
   /*background: linear-gradient(270deg,#ffee54,#ff00ca);*/
-}
+/* } */
 .hal
 {
   width: 50%;
@@ -877,10 +877,6 @@ path
     min-height: auto;
     /* width: auto; */
   }
-  p
-  {
-    font-size: 15px;
-  }
   .about, .educ, .lang, .nom, .cert
   {
     padding: 0 10px 0 0px;
@@ -888,6 +884,7 @@ path
   }
   .contenta, .abtco, .edu, .lange, .cer
   {
+    font-size: 10px;
     min-height: auto;
     padding: 0 10px 0 0px;
     flex-direction: column;
