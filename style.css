@@ -719,7 +719,14 @@ path
   width: 200%;
   animation: marquee 40s linear infinite;
 }
-
+.show
+{
+  display: none;
+}
+.extra-projects
+{
+  display: block;
+}
 .slid img
 {
   height: 50px;
@@ -899,6 +906,14 @@ path
     min-height: auto;
     padding: 0 10px 0 0px;
     flex-direction: column;
+  }
+  .show
+  {
+    display: block;
+  }
+  .extra-projects
+  {
+    display: none;
   }
   .contenta
   {
