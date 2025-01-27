@@ -1,4 +1,195 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@media (max-width: 991px)
+{
+
+  header
+  {
+    height: 78px;
+    background: #161c6f;
+    padding: 20px 25px;
+    z-index: 5000;
+  }
+  header .logo,
+  header.sticky .logo
+  {
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    color: #fff;
+  }
+  header.sticky
+  {
+    background: #161c6f;
+    padding: 20px 25px;
+    z-index: 5000;
+  }
+  section .circle
+  {
+    display: none;
+  }
+  .menu
+  {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #161c6f;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+  .menu.active
+  {
+    left: 0;
+    padding: 50px 0px;
+    overflow-y: visible;
+    overflow-y: auto;
+    display: block;
+    height: 88.5%;
+    scroll-behavior: smooth;
+  }
+  header.sticky ul li a:hover
+  {
+    background: none;
+    color: red;
+  }
+  header ul li a
+  {
+    color: orangered;
+    padding: 23px 15px; 
+  }
+  .toggle
+  {
+    width: 40px;
+    height: 40px;
+    background: url(./img/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+  .toggle.active
+  {
+    background: url(./img/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+   .container
+  {
+    padding: 0 10px 0 0px;
+    min-height: auto;
+    /* width: auto; */
+  }
+  p
+  {
+    font-size: 15px;
+  }
+  .about, .educ, .lang, .nom, .cert
+  {
+    padding: 0 10px 0 0px;
+    min-height: auto;
+  }
+  .contenta, .abtco, .edu, .lange, .cer
+  {
+    font-size: 10px;
+    min-height: auto;
+    padding: 0 10px 0 0px;
+    flex-direction: column;
+  }
+  .contenta
+  {
+    padding-top: 40px;
+  }
+  .ab1, .eduk, .pre
+  {
+    width: auto;
+  }
+  .eduk, .pre, .nom1
+  {
+    padding: 40px;
+    text-align: left;
+  }
+  .abco
+  {
+    padding: 0;
+  }
+  .lan, .lange
+  {
+    flex-direction: column-reverse;
+  }
+  .hal
+  {
+    width: auto;
+  }
+  #map-container
+  {
+    width: auto;
+    height: auto;
+  }
+  .wm4, .nom1
+  {
+    width: auto;
+  }
+  .w45.tcer
+  {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-align-self: none;
+    -ms-flex-item-align: none;
+    align-self: none;
+    padding-top: 0;
+    width: 100%;
+  }
+  .sk
+  {
+    margin: 50px 0 0 0;
+  }
+  .w50
+  {
+    margin-bottom: 20px;
+  }
+  .w50 p
+  {
+    margin: 15px 0;
+  }
+  .w50 img, .slider .figure, .about .w45, .edu .w45, .w45 img, .proj .w46, .w46 img
+  {
+    display: none;
+  }
+  .sti img
+  {
+    display: block;
+    padding: 0;
+  }
+  .lang, .educ, .nom, .cert
+  {
+    padding: 50px 0 0 0;
+  }
+  .ab1
+  {
+    padding-top: 0; 
+  }
+  .contentBx
+  {
+    padding-top: 60px;
+  }
+  .mod img
+  {
+    display: inline-block;
+    justify-content: center;
+  }
+  .container .circle::before, .container .circle::after, .slider
+  {
+    display: none;
+  }
+}@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *
 {
   margin: 0;
