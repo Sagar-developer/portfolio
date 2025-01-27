@@ -799,10 +799,12 @@ path
     background: #161c6f;
     padding: 20px 25px;
     z-index: 5000;
+    width: -webkit-fill-available;
   }
   header .logo,
   header.sticky .logo
   {
+    font-size: 25px;
     padding-top: 10px;
     padding-left: 0px;
     padding-bottom: 10px;
@@ -813,6 +815,8 @@ path
     background: #161c6f;
     padding: 20px 25px;
     z-index: 5000;
+    width: -webkit-fill-available;
+
   }
   section .circle
   {
@@ -884,7 +888,7 @@ path
   }
   .contenta, .abtco, .edu, .lange, .cer
   {
-    font-size: 10px;
+    font-size: 15px;
     min-height: auto;
     padding: 0 10px 0 0px;
     flex-direction: column;
@@ -954,7 +958,8 @@ path
   .sti img
   {
     display: block;
-    padding: 0;
+    padding: 0 50px;
+    width: inherit;
   }
   .lang, .educ, .nom, .cert
   {
