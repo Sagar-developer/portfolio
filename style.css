@@ -874,9 +874,21 @@ path
    .container
   {
     padding: 0 10px 0 0px;
+    min-height: auto;
+    /* width: auto; */
+  }
+  p
+  {
+    font-size: 15px;
+  }
+  .about, .educ, .lang, .nom, .cert
+  {
+    padding: 0 10px 0 0px;
+    min-height: auto;
   }
   .contenta, .abtco, .edu, .lange, .cer
   {
+    min-height: auto;
     padding: 0 10px 0 0px;
     flex-direction: column;
   }
