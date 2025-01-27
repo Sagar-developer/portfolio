@@ -844,7 +844,7 @@ path
     overflow-y: visible;
     overflow-y: auto;
     display: block;
-    height: 88.5%;
+    height: 100%;
     scroll-behavior: smooth;
   }
   header.sticky ul li a:hover
@@ -886,9 +886,16 @@ path
     padding: 0 10px 0 0px;
     min-height: auto;
   }
+  .n1, .n2, .n3, .n4
+  {
+    padding: 0;
+  }
+  .contenta, .abco, .edu, .skills p, .pre, .nom1, .eduk, .map-result
+  {
+    font-size: 13px;
+  }
   .contenta, .abtco, .edu, .lange, .cer
   {
-    font-size: 15px;
     min-height: auto;
     padding: 0 10px 0 0px;
     flex-direction: column;
