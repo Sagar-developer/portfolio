@@ -890,6 +890,10 @@ path
   {
     padding: 0;
   }
+  .slid
+  {
+    animation: marquee 20s linear infinite;
+  }
   .contenta, .abco, .edu, .skills p, .pre, .nom1, .eduk, .map-result
   {
     font-size: 13px;
